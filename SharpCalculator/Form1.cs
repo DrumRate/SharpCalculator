@@ -21,5 +21,25 @@ namespace SharpCalculator
         {
 
         }
+
+        private void buttonPlus_Click(object sender, EventArgs e)
+        {
+            textBoxOutput.Text = (Convert.ToDouble(textBoxInput1.Text.ToString()) + Convert.ToDouble(textBoxInput2.Text.ToString())).ToString();
+        }
+
+        private void buttonMinus_Click(object sender, EventArgs e)
+        {
+            textBoxOutput.Text = (Convert.ToDouble(textBoxInput1.Text.ToString()) - Convert.ToDouble(textBoxInput2.Text.ToString())).ToString();
+        }
+
+        private void buttonMultiply_Click(object sender, EventArgs e)
+        {
+            textBoxOutput.Text = (Convert.ToDouble(textBoxInput1.Text.ToString()) * Convert.ToDouble(textBoxInput2.Text.ToString())).ToString();
+        }
+
+        private void buttonDivide_Click(object sender, EventArgs e)
+        {
+            textBoxOutput.Text = (Convert.ToDouble(textBoxInput1.Text.ToString()) / Convert.ToDouble(textBoxInput2.Text.ToString())).ToString();
+        }
     }
 }
