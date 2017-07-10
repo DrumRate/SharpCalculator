@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SharpCalculator
@@ -13,7 +6,6 @@ namespace SharpCalculator
     public partial class Form1 : Form
     {
 
-        double arg1, arg2, answer;
         public Form1()
         {
             InitializeComponent();
@@ -24,32 +16,28 @@ namespace SharpCalculator
 
         }
 
-        private void buttonPlus_Click(object sender, EventArgs e)
-        {
-            arg1 = Convert.ToDouble(textBoxInput1.Text.ToString());
-            arg2 = Convert.ToDouble(textBoxInput2.Text.ToString());
-            textBoxOutput.Text = (arg1 + arg2).ToString();
-        }
+        private void buttonClick(object sender, EventArgs e) {
+            double firstArgument = Convert.ToDouble(textBoxInput1.Text.ToString());
+            double secondArgument = Convert.ToDouble(textBoxInput2.Text.ToString());
+            double result;
+            switch (((Button)sender).Name) {
+                case "buttonPlus":
+                    result = firstArgument + secondArgument;
+                    break;
+                case "buttonMinus":
+                    result = firstArgument - secondArgument;
+                    break;
+                case "buttonMultiply":
+                    result = firstArgument * secondArgument;
+                    break;
+                case "buttonDivide":
+                    result = firstArgument / secondArgument;
+                    break;
+                default:
+                    throw new Exception("Неизвестная операция");
+            }
 
-        private void buttonMinus_Click(object sender, EventArgs e)
-        {
-            arg1 = Convert.ToDouble(textBoxInput1.Text.ToString());
-            arg2 = Convert.ToDouble(textBoxInput2.Text.ToString());
-            textBoxOutput.Text = (arg1 - arg2).ToString();
-        }
-
-        private void buttonMultiply_Click(object sender, EventArgs e)
-        {
-            arg1 = Convert.ToDouble(textBoxInput1.Text.ToString());
-            arg2 = Convert.ToDouble(textBoxInput2.Text.ToString());
-            textBoxOutput.Text = (arg1 * arg2).ToString();
-        }
-
-        private void buttonDivide_Click(object sender, EventArgs e)
-        {
-            arg1 = Convert.ToDouble(textBoxInput1.Text.ToString());
-            arg2 = Convert.ToDouble(textBoxInput2.Text.ToString());
-            textBoxOutput.Text = (arg1 / arg2).ToString();
+            textBoxOutput.Text = result.ToString();
         }
     }
 }
