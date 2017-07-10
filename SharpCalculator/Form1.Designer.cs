@@ -28,54 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonPlus = new System.Windows.Forms.Button();
-            this.buttonMinus = new System.Windows.Forms.Button();
-            this.buttonMultiply = new System.Windows.Forms.Button();
-            this.buttonDivide = new System.Windows.Forms.Button();
+            this.add = new System.Windows.Forms.Button();
+            this.substract = new System.Windows.Forms.Button();
+            this.multiply = new System.Windows.Forms.Button();
+            this.divide = new System.Windows.Forms.Button();
             this.textBoxInput1 = new System.Windows.Forms.TextBox();
             this.textBoxInput2 = new System.Windows.Forms.TextBox();
             this.textBoxOutput = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // buttonPlus
+            // add
             // 
-            this.buttonPlus.Location = new System.Drawing.Point(35, 90);
-            this.buttonPlus.Name = "buttonPlus";
-            this.buttonPlus.Size = new System.Drawing.Size(75, 20);
-            this.buttonPlus.TabIndex = 0;
-            this.buttonPlus.Text = "+";
-            this.buttonPlus.UseVisualStyleBackColor = true;
-            this.buttonPlus.Click += new System.EventHandler(this.buttonClick);
+            this.add.Location = new System.Drawing.Point(35, 90);
+            this.add.Name = "add";
+            this.add.Size = new System.Drawing.Size(75, 20);
+            this.add.TabIndex = 0;
+            this.add.Text = "+";
+            this.add.UseVisualStyleBackColor = true;
+            this.add.Click += new System.EventHandler(this.TwoArgumentOperationButtonClick);
             // 
-            // buttonMinus
+            // substract
             // 
-            this.buttonMinus.Location = new System.Drawing.Point(35, 120);
-            this.buttonMinus.Name = "buttonMinus";
-            this.buttonMinus.Size = new System.Drawing.Size(75, 20);
-            this.buttonMinus.TabIndex = 1;
-            this.buttonMinus.Text = "-";
-            this.buttonMinus.UseVisualStyleBackColor = true;
-            this.buttonMinus.Click += new System.EventHandler(this.buttonClick);
+            this.substract.Location = new System.Drawing.Point(35, 120);
+            this.substract.Name = "substract";
+            this.substract.Size = new System.Drawing.Size(75, 20);
+            this.substract.TabIndex = 1;
+            this.substract.Text = "-";
+            this.substract.UseVisualStyleBackColor = true;
+            this.substract.Click += new System.EventHandler(this.TwoArgumentOperationButtonClick);
             // 
-            // buttonMultiply
+            // multiply
             // 
-            this.buttonMultiply.Location = new System.Drawing.Point(150, 90);
-            this.buttonMultiply.Name = "buttonMultiply";
-            this.buttonMultiply.Size = new System.Drawing.Size(75, 20);
-            this.buttonMultiply.TabIndex = 2;
-            this.buttonMultiply.Text = "*";
-            this.buttonMultiply.UseVisualStyleBackColor = true;
-            this.buttonMultiply.Click += new System.EventHandler(this.buttonClick);
+            this.multiply.Location = new System.Drawing.Point(150, 90);
+            this.multiply.Name = "multiply";
+            this.multiply.Size = new System.Drawing.Size(75, 20);
+            this.multiply.TabIndex = 2;
+            this.multiply.Text = "*";
+            this.multiply.UseVisualStyleBackColor = true;
+            this.multiply.Click += new System.EventHandler(this.TwoArgumentOperationButtonClick);
             // 
-            // buttonDivide
+            // divide
             // 
-            this.buttonDivide.Location = new System.Drawing.Point(150, 120);
-            this.buttonDivide.Name = "buttonDivide";
-            this.buttonDivide.Size = new System.Drawing.Size(75, 20);
-            this.buttonDivide.TabIndex = 3;
-            this.buttonDivide.Text = "/";
-            this.buttonDivide.UseVisualStyleBackColor = true;
-            this.buttonDivide.Click += new System.EventHandler(this.buttonClick);
+            this.divide.Location = new System.Drawing.Point(150, 120);
+            this.divide.Name = "divide";
+            this.divide.Size = new System.Drawing.Size(75, 20);
+            this.divide.TabIndex = 3;
+            this.divide.Text = "/";
+            this.divide.UseVisualStyleBackColor = true;
+            this.divide.Click += new System.EventHandler(this.TwoArgumentOperationButtonClick);
             // 
             // textBoxInput1
             // 
@@ -106,10 +106,10 @@
             this.Controls.Add(this.textBoxOutput);
             this.Controls.Add(this.textBoxInput2);
             this.Controls.Add(this.textBoxInput1);
-            this.Controls.Add(this.buttonDivide);
-            this.Controls.Add(this.buttonMultiply);
-            this.Controls.Add(this.buttonMinus);
-            this.Controls.Add(this.buttonPlus);
+            this.Controls.Add(this.divide);
+            this.Controls.Add(this.multiply);
+            this.Controls.Add(this.substract);
+            this.Controls.Add(this.add);
             this.Name = "Form1";
             this.Text = "Calculator";
             this.ResumeLayout(false);
@@ -119,10 +119,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button buttonPlus;
-        private System.Windows.Forms.Button buttonMinus;
-        private System.Windows.Forms.Button buttonMultiply;
-        private System.Windows.Forms.Button buttonDivide;
+        private System.Windows.Forms.Button add;
+        private System.Windows.Forms.Button substract;
+        private System.Windows.Forms.Button multiply;
+        private System.Windows.Forms.Button divide;
         private System.Windows.Forms.TextBox textBoxInput1;
         private System.Windows.Forms.TextBox textBoxInput2;
         private System.Windows.Forms.TextBox textBoxOutput;
