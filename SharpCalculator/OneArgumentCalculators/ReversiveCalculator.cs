@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace SharpCalculator
+﻿namespace SharpCalculator.OneArgumentCalculators
 {
     public class ReversiveCalculator : IOneAgrumentsCalculator
     {

@@ -1,4 +1,4 @@
-﻿namespace SharpCalculator
+﻿namespace SharpCalculator.TwoArgumentsCalculators
 {
     public class MultiplyCalculator : ITwoArgumentsCalculator
     {

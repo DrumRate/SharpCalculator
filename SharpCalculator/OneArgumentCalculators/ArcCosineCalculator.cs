@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SharpCalculator
+namespace SharpCalculator.OneArgumentCalculators
 {
     public class ArcCosineCalculator : IOneAgrumentsCalculator
     {
