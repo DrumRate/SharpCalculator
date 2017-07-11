@@ -40,8 +40,10 @@ namespace SharpCalculator.OneArgumentCalculators
                     return new ExponentialFunctionTwoCalculator();
                 case "exp10":
                     return new ExponentialFunctionTenCalculator();
-                case "sqr":
+                case "sqrt":
                     return new SquareRootCalculator();
+                case "sqr":
+                    return new SquareCalculator();
                 case "gradToRad":
                     return new RadToGradConverter();
                 case "radToGrad":

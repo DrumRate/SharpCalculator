@@ -2,11 +2,11 @@
 
 namespace SharpCalculator.OneArgumentCalculators
 {
-    public class SquareRootCalculator : IOneAgrumentsCalculator
+    public class SquareCalculator : IOneAgrumentsCalculator
     {
         public double Calculate(double argument)
         {
-            return Math.Pow(argument, 0.5);
+            return argument * argument;
         }
     }
 }
