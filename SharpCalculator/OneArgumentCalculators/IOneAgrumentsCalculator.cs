@@ -1,4 +1,4 @@
-﻿namespace SharpCalculator
+﻿namespace SharpCalculator.OneArgumentCalculators
 {
     public interface IOneAgrumentsCalculator
     {

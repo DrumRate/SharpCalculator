@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace SharpCalculator.OneArgumentCalculators
+﻿namespace SharpCalculator.OneArgumentCalculators
 {
     public class SineGradCalculator : IOneAgrumentsCalculator
     {

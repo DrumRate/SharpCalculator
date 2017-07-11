@@ -1,7 +1,6 @@
 ﻿using System;
-using SharpCalculator.TwoArgumentsCalculators;
 
-namespace SharpCalculator
+namespace SharpCalculator.TwoArgumentsCalculators
 {
     public static class TwoArgumentsFactory
     {

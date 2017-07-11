@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Runtime.Remoting.Messaging;
-using SharpCalculator.OneArgumentCalculators;
 
-namespace SharpCalculator
+namespace SharpCalculator.OneArgumentCalculators
 {
     public static class OneArgumentFactory
     {

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Globalization;
 using System.Windows.Forms;
+using SharpCalculator.OneArgumentCalculators;
+using SharpCalculator.TwoArgumentsCalculators;
 
 namespace SharpCalculator
 {
