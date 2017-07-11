@@ -48,9 +48,14 @@ namespace SharpCalculator
                     return new RadToGradConverter();
                 case "radToGrad":
                     return new GradToRadConverter();
-                case "arcsinToGrad":
+                case "arcsinGrad":
                     return new ArcSineGradCalculator();
-
+                case "sinGrad":
+                    return new SineGradCalculator();
+                case "cosGrad":
+                    return new CosineGradCalculator();
+                case "arccosGrad":
+                    return new ArcCosineGradCalculator();
                 default:
                     throw new Exception("Неизвестная операция");
             }
