@@ -46,8 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbsCalculator.cs" />
     <Compile Include="AdditionCalculator.cs" />
+    <Compile Include="ArcCosineCalculator.cs" />
+    <Compile Include="ArcSineCalculator.cs" />
+    <Compile Include="ArctanCalculator.cs" />
+    <Compile Include="CosineCalculator.cs" />
+    <Compile Include="CtanCalculator.cs" />
     <Compile Include="DivisionCalculator.cs" />
+    <Compile Include="IOneAgrumentsCalculator.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,9 +63,13 @@
     </Compile>
     <Compile Include="ITwoArgumentsCalculator.cs" />
     <Compile Include="MultiplyCalculator.cs" />
+    <Compile Include="OneArgumentFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReversiveCalculator.cs" />
+    <Compile Include="SineCalculator.cs" />
     <Compile Include="SubstractionCalculator.cs" />
+    <Compile Include="TanCalculator.cs" />
     <Compile Include="TwoArgumentsFactory.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
