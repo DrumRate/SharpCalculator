@@ -56,15 +56,21 @@
             this.abs = new System.Windows.Forms.Button();
             this.sin = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.arith = new System.Windows.Forms.Button();
+            this.geom = new System.Windows.Forms.Button();
+            this.integer = new System.Windows.Forms.Button();
+            this.maximum = new System.Windows.Forms.Button();
+            this.remain = new System.Windows.Forms.Button();
+            this.minimum = new System.Windows.Forms.Button();
             this.exp_xy = new System.Windows.Forms.Button();
+            this.logxy = new System.Windows.Forms.Button();
             this.add = new System.Windows.Forms.Button();
             this.angle = new System.Windows.Forms.Button();
-            this.substract = new System.Windows.Forms.Button();
-            this.radius = new System.Windows.Forms.Button();
-            this.multiply = new System.Windows.Forms.Button();
-            this.logxy = new System.Windows.Forms.Button();
             this.exp_xy_rev = new System.Windows.Forms.Button();
             this.divide = new System.Windows.Forms.Button();
+            this.radius = new System.Windows.Forms.Button();
+            this.multiply = new System.Windows.Forms.Button();
+            this.substract = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -362,6 +368,12 @@
             // groupBox2
             // 
             this.groupBox2.AutoSize = true;
+            this.groupBox2.Controls.Add(this.arith);
+            this.groupBox2.Controls.Add(this.geom);
+            this.groupBox2.Controls.Add(this.integer);
+            this.groupBox2.Controls.Add(this.maximum);
+            this.groupBox2.Controls.Add(this.remain);
+            this.groupBox2.Controls.Add(this.minimum);
             this.groupBox2.Controls.Add(this.exp_xy);
             this.groupBox2.Controls.Add(this.logxy);
             this.groupBox2.Controls.Add(this.add);
@@ -378,6 +390,72 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Two arguments";
             // 
+            // arith
+            // 
+            this.arith.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.arith.Location = new System.Drawing.Point(109, 115);
+            this.arith.Name = "arith";
+            this.arith.Size = new System.Drawing.Size(95, 20);
+            this.arith.TabIndex = 54;
+            this.arith.Text = "Arith";
+            this.arith.UseVisualStyleBackColor = true;
+            this.arith.Click += new System.EventHandler(this.TwoArgumentOperationButtonClick);
+            // 
+            // geom
+            // 
+            this.geom.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.geom.Location = new System.Drawing.Point(210, 115);
+            this.geom.Name = "geom";
+            this.geom.Size = new System.Drawing.Size(95, 20);
+            this.geom.TabIndex = 53;
+            this.geom.Text = "Geom";
+            this.geom.UseVisualStyleBackColor = true;
+            this.geom.Click += new System.EventHandler(this.TwoArgumentOperationButtonClick);
+            // 
+            // integer
+            // 
+            this.integer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.integer.Location = new System.Drawing.Point(11, 115);
+            this.integer.Name = "integer";
+            this.integer.Size = new System.Drawing.Size(95, 20);
+            this.integer.TabIndex = 52;
+            this.integer.Text = "Integer";
+            this.integer.UseVisualStyleBackColor = true;
+            this.integer.Click += new System.EventHandler(this.TwoArgumentOperationButtonClick);
+            // 
+            // maximum
+            // 
+            this.maximum.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.maximum.Location = new System.Drawing.Point(311, 59);
+            this.maximum.Name = "maximum";
+            this.maximum.Size = new System.Drawing.Size(95, 20);
+            this.maximum.TabIndex = 51;
+            this.maximum.Text = "Max";
+            this.maximum.UseVisualStyleBackColor = true;
+            this.maximum.Click += new System.EventHandler(this.TwoArgumentOperationButtonClick);
+            // 
+            // remain
+            // 
+            this.remain.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.remain.Location = new System.Drawing.Point(311, 89);
+            this.remain.Name = "remain";
+            this.remain.Size = new System.Drawing.Size(95, 20);
+            this.remain.TabIndex = 50;
+            this.remain.Text = "Remain";
+            this.remain.UseVisualStyleBackColor = true;
+            this.remain.Click += new System.EventHandler(this.TwoArgumentOperationButtonClick);
+            // 
+            // minimum
+            // 
+            this.minimum.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.minimum.Location = new System.Drawing.Point(311, 29);
+            this.minimum.Name = "minimum";
+            this.minimum.Size = new System.Drawing.Size(95, 20);
+            this.minimum.TabIndex = 49;
+            this.minimum.Text = "Min";
+            this.minimum.UseVisualStyleBackColor = true;
+            this.minimum.Click += new System.EventHandler(this.TwoArgumentOperationButtonClick);
+            // 
             // exp_xy
             // 
             this.exp_xy.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -388,6 +466,17 @@
             this.exp_xy.Text = "x ^ y";
             this.exp_xy.UseVisualStyleBackColor = true;
             this.exp_xy.Click += new System.EventHandler(this.TwoArgumentOperationButtonClick);
+            // 
+            // logxy
+            // 
+            this.logxy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logxy.Location = new System.Drawing.Point(210, 59);
+            this.logxy.Name = "logxy";
+            this.logxy.Size = new System.Drawing.Size(95, 20);
+            this.logxy.TabIndex = 46;
+            this.logxy.Text = "logx(y)";
+            this.logxy.UseVisualStyleBackColor = true;
+            this.logxy.Click += new System.EventHandler(this.TwoArgumentOperationButtonClick);
             // 
             // add
             // 
@@ -411,16 +500,27 @@
             this.angle.UseVisualStyleBackColor = true;
             this.angle.Click += new System.EventHandler(this.TwoArgumentOperationButtonClick);
             // 
-            // substract
+            // exp_xy_rev
             // 
-            this.substract.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.substract.Location = new System.Drawing.Point(11, 59);
-            this.substract.Name = "substract";
-            this.substract.Size = new System.Drawing.Size(95, 20);
-            this.substract.TabIndex = 41;
-            this.substract.Text = "-";
-            this.substract.UseVisualStyleBackColor = true;
-            this.substract.Click += new System.EventHandler(this.TwoArgumentOperationButtonClick);
+            this.exp_xy_rev.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exp_xy_rev.Location = new System.Drawing.Point(210, 89);
+            this.exp_xy_rev.Name = "exp_xy_rev";
+            this.exp_xy_rev.Size = new System.Drawing.Size(95, 20);
+            this.exp_xy_rev.TabIndex = 45;
+            this.exp_xy_rev.Text = "x ^ (1 / y)";
+            this.exp_xy_rev.UseVisualStyleBackColor = true;
+            this.exp_xy_rev.Click += new System.EventHandler(this.TwoArgumentOperationButtonClick);
+            // 
+            // divide
+            // 
+            this.divide.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.divide.Location = new System.Drawing.Point(111, 59);
+            this.divide.Name = "divide";
+            this.divide.Size = new System.Drawing.Size(95, 20);
+            this.divide.TabIndex = 43;
+            this.divide.Text = "/";
+            this.divide.UseVisualStyleBackColor = true;
+            this.divide.Click += new System.EventHandler(this.TwoArgumentOperationButtonClick);
             // 
             // radius
             // 
@@ -444,38 +544,16 @@
             this.multiply.UseVisualStyleBackColor = true;
             this.multiply.Click += new System.EventHandler(this.TwoArgumentOperationButtonClick);
             // 
-            // logxy
+            // substract
             // 
-            this.logxy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.logxy.Location = new System.Drawing.Point(210, 59);
-            this.logxy.Name = "logxy";
-            this.logxy.Size = new System.Drawing.Size(95, 20);
-            this.logxy.TabIndex = 46;
-            this.logxy.Text = "logx(y)";
-            this.logxy.UseVisualStyleBackColor = true;
-            this.logxy.Click += new System.EventHandler(this.TwoArgumentOperationButtonClick);
-            // 
-            // exp_xy_rev
-            // 
-            this.exp_xy_rev.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exp_xy_rev.Location = new System.Drawing.Point(210, 89);
-            this.exp_xy_rev.Name = "exp_xy_rev";
-            this.exp_xy_rev.Size = new System.Drawing.Size(95, 20);
-            this.exp_xy_rev.TabIndex = 45;
-            this.exp_xy_rev.Text = "x ^ (1 / y)";
-            this.exp_xy_rev.UseVisualStyleBackColor = true;
-            this.exp_xy_rev.Click += new System.EventHandler(this.TwoArgumentOperationButtonClick);
-            // 
-            // divide
-            // 
-            this.divide.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.divide.Location = new System.Drawing.Point(111, 59);
-            this.divide.Name = "divide";
-            this.divide.Size = new System.Drawing.Size(95, 20);
-            this.divide.TabIndex = 43;
-            this.divide.Text = "/";
-            this.divide.UseVisualStyleBackColor = true;
-            this.divide.Click += new System.EventHandler(this.TwoArgumentOperationButtonClick);
+            this.substract.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.substract.Location = new System.Drawing.Point(11, 59);
+            this.substract.Name = "substract";
+            this.substract.Size = new System.Drawing.Size(95, 20);
+            this.substract.TabIndex = 41;
+            this.substract.Text = "-";
+            this.substract.UseVisualStyleBackColor = true;
+            this.substract.Click += new System.EventHandler(this.TwoArgumentOperationButtonClick);
             // 
             // MainForm
             // 
@@ -534,6 +612,12 @@
         private System.Windows.Forms.Button radius;
         private System.Windows.Forms.Button multiply;
         private System.Windows.Forms.Button substract;
+        private System.Windows.Forms.Button arith;
+        private System.Windows.Forms.Button geom;
+        private System.Windows.Forms.Button integer;
+        private System.Windows.Forms.Button maximum;
+        private System.Windows.Forms.Button remain;
+        private System.Windows.Forms.Button minimum;
     }
 }
 

@@ -26,6 +26,18 @@ namespace SharpCalculator.TwoArgumentsCalculators
                     return new RadialSystemRadiusCalculator();
                 case "angle":
                     return new RadialSystemAngleCalculator();
+                case "minimum":
+                    return new MinCalculator();
+                case "maximum":
+                    return new MaxCalculator();
+                case "remain":
+                    return new RemainderCalculator();
+                case "integer":
+                    return new IntegerCalculator();
+                case "arith":
+                    return new ArithmeticCalculator();
+                case "geom":
+                    return new GeometricCalculator();
                 default:
                     throw new Exception("Неизвестная операция");
             }

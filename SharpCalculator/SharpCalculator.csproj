@@ -58,6 +58,7 @@
     <Compile Include="OneArgumentCalculators\ArctanCalculator.cs" />
     <Compile Include="OneArgumentCalculators\CosineCalculator.cs" />
     <Compile Include="OneArgumentCalculators\CtanCalculator.cs" />
+    <Compile Include="TwoArgumentsCalculators\ArithmeticCalculator.cs" />
     <Compile Include="TwoArgumentsCalculators\DivisionCalculator.cs" />
     <Compile Include="OneArgumentCalculators\ExpCalculator.cs" />
     <Compile Include="OneArgumentCalculators\ExponentialFunctionTwoCalculator.cs" />
@@ -76,8 +77,12 @@
     </Compile>
     <Compile Include="TwoArgumentsCalculators\DoubleExponentalCalculator.cs" />
     <Compile Include="TwoArgumentsCalculators\DoubleExponentalReversiveCalculator.cs" />
+    <Compile Include="TwoArgumentsCalculators\GeometricCalculator.cs" />
+    <Compile Include="TwoArgumentsCalculators\IntegerCalculator.cs" />
     <Compile Include="TwoArgumentsCalculators\ITwoArgumentsCalculator.cs" />
     <Compile Include="TwoArgumentsCalculators\LogBasementCalculator.cs" />
+    <Compile Include="TwoArgumentsCalculators\MaxCalculator.cs" />
+    <Compile Include="TwoArgumentsCalculators\MinCalculator.cs" />
     <Compile Include="TwoArgumentsCalculators\MultiplyCalculator.cs" />
     <Compile Include="OneArgumentCalculators\OneArgumentFactory.cs" />
     <Compile Include="Program.cs" />
@@ -88,6 +93,7 @@
     <Compile Include="OneArgumentCalculators\SquareRootCalculator.cs" />
     <Compile Include="TwoArgumentsCalculators\RadialSystemAngleCalculator.cs" />
     <Compile Include="TwoArgumentsCalculators\RadialSystemRadiusCalculator.cs" />
+    <Compile Include="TwoArgumentsCalculators\RemainderCalculator.cs" />
     <Compile Include="TwoArgumentsCalculators\SubstractionCalculator.cs" />
     <Compile Include="OneArgumentCalculators\TanCalculator.cs" />
     <Compile Include="TwoArgumentsCalculators\TwoArgumentsFactory.cs" />
