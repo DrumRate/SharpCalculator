@@ -2,8 +2,17 @@
 
 namespace SharpCalculator.TwoArgumentsCalculators
 {
+    /// <summary>
+    /// Function of calculating corner points, given in Euclidean coordinates into the radial coordinate system
+    /// </summary>
     public class RadialSystemAngleCalculator : ITwoArgumentsCalculator
     {
+        /// <summary>
+        /// Method of calculating corner points, given in Euclidean coordinates into the radial coordinate system
+        /// </summary>
+        /// <param name="firstArgument">Parametr that is entered by user</param>
+        /// <param name="secondArgument">Parametr that is entered by user</param>
+        /// <returns></returns>
         public double Calculate(double firstArgument, double secondArgument)
         {
             if (firstArgument > 0 & secondArgument >= 0)

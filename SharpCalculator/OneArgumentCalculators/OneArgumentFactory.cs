@@ -4,6 +4,11 @@ namespace SharpCalculator.OneArgumentCalculators
 {
     public static class OneArgumentFactory
     {
+        /// <summary>
+        /// The method returns an instance of the class IOneArgumentCalculator
+        /// </summary>
+        /// <param name="calculatorName"></param>
+        /// <returns></returns>
         public static IOneAgrumentsCalculator CreateCalculator(string calculatorName)
         {
             switch (calculatorName)
