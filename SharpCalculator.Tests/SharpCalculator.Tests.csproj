@@ -44,12 +44,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArgumentCalculatorTests\AbsCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculatorTests\ArcCosineCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculatorTests\ArctanCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculatorTests\CtanCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculatorTests\InvertCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculatorTests\LgCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculatorTests\OneArgumentFactoryTests.cs" />
+    <Compile Include="OneArgumentCalculatorTests\ReversiveCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculatorTests\SquareCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculatorTests\SquareRootCalculatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestClass.cs" />
     <Compile Include="TwoArgumentsCalculatorTests\AdditionCalculatorTests.cs" />
     <Compile Include="TwoArgumentsCalculatorTests\ArithmeticCalculatorTests.cs" />
     <Compile Include="TwoArgumentsCalculatorTests\DoubleExponentalCalculatorTests.cs" />
     <Compile Include="TwoArgumentsCalculatorTests\DoubleExponentalReversiveCalculatorTests.cs" />
+    <Compile Include="TwoArgumentsCalculatorTests\TwoArgumentsFactoryTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SharpCalculator\SharpCalculator.csproj">
@@ -60,9 +70,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="OneArgumentCalculatorTests\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>

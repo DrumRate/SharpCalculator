@@ -6,12 +6,14 @@ namespace SharpCalculator.Tests.TwoArgumentsCalculatorTests
     [TestFixture]
     public class AdditionCalculatorTests
     {
-        [Test]
-        public void CalculateTest()
+        [TestCase(2, 3, 5)]
+        [TestCase(-4, -6, -10)]
+        [TestCase(5, 3.4, 8.4)]
+        public void CalculateTest(double firstArgument, double secondArgument, double expectedResult)
         {
             var calculator = new AdditionCalculator();
-            Assert.AreEqual(5, calculator.Calculate(2, 3));
-            Assert.AreEqual(0, calculator.Calculate(-3, 3));
+            var actualResult = calculator.Calculate(firstArgument, secondArgument);
+            Assert.AreEqual(actualResult, expectedResult);
         }
     }
 

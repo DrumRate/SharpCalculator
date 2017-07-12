@@ -32,6 +32,7 @@
             this.secondInputField = new System.Windows.Forms.TextBox();
             this.outputField = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.invert = new System.Windows.Forms.Button();
             this.sqr = new System.Windows.Forms.Button();
             this.lg = new System.Windows.Forms.Button();
             this.log = new System.Windows.Forms.Button();
@@ -105,6 +106,7 @@
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox1.AutoSize = true;
+            this.groupBox1.Controls.Add(this.invert);
             this.groupBox1.Controls.Add(this.sqr);
             this.groupBox1.Controls.Add(this.lg);
             this.groupBox1.Controls.Add(this.log);
@@ -134,6 +136,16 @@
             this.groupBox1.TabIndex = 38;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "One argument";
+            // 
+            // invert
+            // 
+            this.invert.Location = new System.Drawing.Point(321, 79);
+            this.invert.Name = "invert";
+            this.invert.Size = new System.Drawing.Size(100, 20);
+            this.invert.TabIndex = 56;
+            this.invert.Text = "-x";
+            this.invert.UseVisualStyleBackColor = true;
+            this.invert.Click += new System.EventHandler(this.OneArgumentOperationButtonClick);
             // 
             // sqr
             // 
@@ -618,6 +630,7 @@
         private System.Windows.Forms.Button maximum;
         private System.Windows.Forms.Button remain;
         private System.Windows.Forms.Button minimum;
+        private System.Windows.Forms.Button invert;
     }
 }
 

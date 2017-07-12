@@ -6,12 +6,14 @@ namespace SharpCalculator.Tests.TwoArgumentsCalculatorTests
     [TestFixture]
     public class DoubleExponentalReversiveCalculatorTests
     {
-        [Test]
-        public void CalculateTest()
+        [TestCase(1, 2, 1)]
+        [TestCase(16, 4, 2)]
+        [TestCase(8, 3, 2)]
+        public void CalculateTest(double firstArgument, double secondArgument, double expectedResult)
         {
             var calculator = new DoubleExponentalReversiveCalculator();
-            Assert.AreEqual(2, calculator.Calculate(8, 3));
-            Assert.AreEqual(3, calculator.Calculate(27, 3));
+            var actualResult = calculator.Calculate(firstArgument, secondArgument);
+            Assert.AreEqual(actualResult, expectedResult);
         }
     }
 

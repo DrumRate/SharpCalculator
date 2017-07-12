@@ -24,10 +24,17 @@ namespace SharpCalculator
 
         private void OneArgumentOperationButtonClick(object sender, EventArgs e)
         {
-            var argument = Convert.ToDouble(firstInputField.Text);
-            var calculator = OneArgumentFactory.CreateCalculator(((Button) sender).Name);
-            var result = calculator.Calculate(argument);
-            outputField.Text = result.ToString(CultureInfo.InvariantCulture);
+            try
+            {
+                var argument = Convert.ToDouble(firstInputField.Text);
+                var calculator = OneArgumentFactory.CreateCalculator(((Button) sender).Name);
+                var result = calculator.Calculate(argument);
+                outputField.Text = result.ToString(CultureInfo.InvariantCulture);
+            }
+            catch (DivideByZeroException exception)
+            {
+                MessageBox msgBox = new MessageBox("Divide by Zero");
+            }
         }
     }
 }
