@@ -1,5 +1,4 @@
 ﻿using System;
-using SharpCalculator.OneArgumentCalculators;
 
 namespace SharpCalculator.TwoArgumentsCalculators
 {

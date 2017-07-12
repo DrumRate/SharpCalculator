@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace SharpCalculator.TwoArgumentsCalculators
+﻿namespace SharpCalculator.TwoArgumentsCalculators
 {
     public class ArithmeticCalculator : ITwoArgumentsCalculator
     {
