@@ -3,12 +3,12 @@
 namespace SharpCalculator.OneArgumentCalculators
 {
     /// <summary>
-    /// Function which raises two to a given degree
+    ///     Function which raises two to a given degree
     /// </summary>
     public class ExponentialFunctionTwoCalculator : IOneAgrumentsCalculator
     {
         /// <summary>
-        /// Method which raises two to a given degree
+        ///     Method which raises two to a given degree
         /// </summary>
         /// <param name="argument">Parametr that is entered by user</param>
         /// <returns></returns>

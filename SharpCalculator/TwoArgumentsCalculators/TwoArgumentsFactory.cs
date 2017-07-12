@@ -5,7 +5,7 @@ namespace SharpCalculator.TwoArgumentsCalculators
     public static class TwoArgumentsFactory
     {
         /// <summary>
-        /// The method returns an instance of the class ITwoArgumentsCalculator
+        ///     The method returns an instance of the class ITwoArgumentsCalculator
         /// </summary>
         /// <param name="calculatorName"></param>
         /// <returns></returns>

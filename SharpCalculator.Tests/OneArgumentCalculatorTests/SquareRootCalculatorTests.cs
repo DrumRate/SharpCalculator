@@ -24,5 +24,4 @@ namespace SharpCalculator.Tests.OneArgumentCalculatorTests
             Assert.Throws<Exception>(() => calculator.Calculate(-23));
         }
     }
-
 }

@@ -3,12 +3,12 @@
 namespace SharpCalculator.OneArgumentCalculators
 {
     /// <summary>
-    /// Function calculates the arc sine of an angle in degrees
+    ///     Function calculates the arc sine of an angle in degrees
     /// </summary>
     public class ArcSineGradCalculator : IOneAgrumentsCalculator
     {
         /// <summary>
-        /// The method calculates the arc sine of an angle in degrees
+        ///     The method calculates the arc sine of an angle in degrees
         /// </summary>
         /// <param name="argument">Parametr that is entered by user</param>
         /// <returns></returns>

@@ -16,5 +16,4 @@ namespace SharpCalculator.Tests.OneArgumentCalculatorTests
             Assert.AreEqual(expectedResult, actualResult, 0.001);
         }
     }
-
 }

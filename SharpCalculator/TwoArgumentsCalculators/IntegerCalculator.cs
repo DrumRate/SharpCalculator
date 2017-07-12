@@ -3,12 +3,12 @@
 namespace SharpCalculator.TwoArgumentsCalculators
 {
     /// <summary>
-    /// Function integer division
+    ///     Function integer division
     /// </summary>
     public class IntegerCalculator : ITwoArgumentsCalculator
     {
         /// <summary>
-        /// Method integer division
+        ///     Method integer division
         /// </summary>
         /// <param name="firstArgument">Parametr that is entered by user</param>
         /// <param name="secondArgument">Parametr that is entered by user</param>

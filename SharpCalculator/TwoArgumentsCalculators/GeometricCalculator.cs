@@ -3,12 +3,12 @@
 namespace SharpCalculator.TwoArgumentsCalculators
 {
     /// <summary>
-    /// Function of geometric mean
+    ///     Function of geometric mean
     /// </summary>
     public class GeometricCalculator : ITwoArgumentsCalculator
     {
         /// <summary>
-        /// Method of geometric mean
+        ///     Method of geometric mean
         /// </summary>
         /// <param name="firstArgument">Parametr that is entered by user</param>
         /// <param name="secondArgument">Parametr that is entered by user</param>

@@ -3,12 +3,12 @@
 namespace SharpCalculator.TwoArgumentsCalculators
 {
     /// <summary>
-    /// Function subtraction of the two arguments
+    ///     Function subtraction of the two arguments
     /// </summary>
     public class DivisionCalculator : ITwoArgumentsCalculator
     {
         /// <summary>
-        /// Method subtraction of the two arguments
+        ///     Method subtraction of the two arguments
         /// </summary>
         /// <param name="firstArgument">Parametr that is entered by user</param>
         /// <param name="secondArgument">Parametr that is entered by user</param>

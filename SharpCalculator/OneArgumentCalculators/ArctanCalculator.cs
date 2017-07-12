@@ -3,12 +3,12 @@
 namespace SharpCalculator.OneArgumentCalculators
 {
     /// <summary>
-    /// The function calculates the arctangent of a number
+    ///     The function calculates the arctangent of a number
     /// </summary>
     public class ArctanCalculator : IOneAgrumentsCalculator
     {
         /// <summary>
-        /// The method calculates the arctangent of a number
+        ///     The method calculates the arctangent of a number
         /// </summary>
         /// <param name="argument">Parametr that is entered by user</param>
         /// <returns></returns>

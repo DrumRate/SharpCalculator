@@ -1,12 +1,12 @@
 ﻿namespace SharpCalculator.OneArgumentCalculators
 {
     /// <summary>
-    /// Function of squaring
+    ///     Function of squaring
     /// </summary>
     public class SquareCalculator : IOneAgrumentsCalculator
     {
         /// <summary>
-        /// Method of squaring
+        ///     Method of squaring
         /// </summary>
         /// <param name="argument">Parametr that is entered by user</param>
         /// <returns></returns>

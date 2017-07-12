@@ -16,6 +16,7 @@ namespace SharpCalculator.Tests.TwoArgumentsCalculatorTests
             var actualResult = calculator.Calculate(firstAgrument, secondArgument);
             Assert.AreEqual(expectedResult, actualResult, 0.001);
         }
+
         [Test]
         public void ExceptionTest()
         {

@@ -3,12 +3,12 @@
 namespace SharpCalculator.TwoArgumentsCalculators
 {
     /// <summary>
-    /// Function of comparing two numbers and output the maximum
+    ///     Function of comparing two numbers and output the maximum
     /// </summary>
     public class MaxCalculator : ITwoArgumentsCalculator
     {
         /// <summary>
-        /// Method of comparing two numbers and output the maximum
+        ///     Method of comparing two numbers and output the maximum
         /// </summary>
         /// <param name="firstArgument">Parametr that is entered by user</param>
         /// <param name="secondArgument">Parametr that is entered by user</param>

@@ -8,7 +8,7 @@ namespace SharpCalculator.Tests.OneArgumentCalculatorTests
     public class CosineCalculatorTests
     {
         [TestCase(0, 1)]
-        [TestCase(Math.PI/2, 0)]
+        [TestCase(Math.PI / 2, 0)]
         [TestCase(Math.PI, -1)]
         public void CalculateTest(double firstArgument, double expectedResult)
         {

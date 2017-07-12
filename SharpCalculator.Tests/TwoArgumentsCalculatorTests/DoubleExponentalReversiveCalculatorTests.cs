@@ -24,5 +24,4 @@ namespace SharpCalculator.Tests.TwoArgumentsCalculatorTests
             Assert.Throws<DivideByZeroException>(() => calculator.Calculate(1, 0));
         }
     }
-
 }

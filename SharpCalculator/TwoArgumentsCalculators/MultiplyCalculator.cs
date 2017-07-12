@@ -1,12 +1,12 @@
 ﻿namespace SharpCalculator.TwoArgumentsCalculators
 {
     /// <summary>
-    /// Function of multiplying the first argument by the second argument
+    ///     Function of multiplying the first argument by the second argument
     /// </summary>
     public class MultiplyCalculator : ITwoArgumentsCalculator
     {
         /// <summary>
-        /// Method of multiplying the first argument by the second argument
+        ///     Method of multiplying the first argument by the second argument
         /// </summary>
         /// <param name="firstArgument">Parametr that is entered by user</param>
         /// <param name="secondArgument">Parametr that is entered by user</param>

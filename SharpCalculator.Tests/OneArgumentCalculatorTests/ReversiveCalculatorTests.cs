@@ -21,8 +21,7 @@ namespace SharpCalculator.Tests.OneArgumentCalculatorTests
         public void ExceptionTest()
         {
             var calculator = new ReversiveCalculator();
-            Assert.Throws<DivideByZeroException>(()=>calculator.Calculate(0));
+            Assert.Throws<DivideByZeroException>(() => calculator.Calculate(0));
         }
     }
-
 }
