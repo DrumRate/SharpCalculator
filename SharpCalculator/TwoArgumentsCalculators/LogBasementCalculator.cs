@@ -6,7 +6,9 @@ namespace SharpCalculator.TwoArgumentsCalculators
     {
         public double Calculate(double firstArgument, double secondArgument)
         {
-            return Math.Log(firstArgument, secondArgument);
+            if (secondArgument <= 0)
+                throw new Exception("Недопустимые входные данные");
+            return Math.Log(secondArgument, firstArgument);
         }
     }
 }

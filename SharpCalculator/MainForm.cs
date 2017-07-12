@@ -33,7 +33,7 @@ namespace SharpCalculator
             }
             catch (DivideByZeroException exception)
             {
-                MessageBox msgBox = new MessageBox("Divide by Zero");
+//                MessageBox msgBox = new MessageBox("Divide by Zero");
             }
         }
     }

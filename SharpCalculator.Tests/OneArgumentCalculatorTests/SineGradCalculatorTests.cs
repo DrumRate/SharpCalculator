@@ -4,18 +4,16 @@ using SharpCalculator.OneArgumentCalculators;
 
 namespace SharpCalculator.Tests.OneArgumentCalculatorTests
 {
-    [TestFixture]
-    public class CtanCalculatorTests
+    public class SineGradCalculatorTests
     {
-        [TestCase(Math.PI / 4, 1)]
-        [TestCase(-Math.PI / 4, -1)]
-        [TestCase(Math.PI / 2, 0)]
+        [TestCase(180, 0)]
+        [TestCase(90, 1)]
+        [TestCase(0, 0)]
         public void CalculateTest(double firstArgument, double expectedResult)
         {
-            var calculator = new CtanCalculator();
+            var calculator = new SineGradCalculator();
             var actualResult = calculator.Calculate(firstArgument);
             Assert.AreEqual(expectedResult, actualResult, 0.001);
         }
     }
-
 }

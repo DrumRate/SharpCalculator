@@ -1,7 +1,6 @@
 ﻿using System;
 using NUnit.Framework;
 using SharpCalculator.OneArgumentCalculators;
-using SharpCalculator.TwoArgumentsCalculators;
 
 namespace SharpCalculator.Tests.OneArgumentCalculatorTests
 {

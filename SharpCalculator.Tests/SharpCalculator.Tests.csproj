@@ -30,9 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="nunit.framework, Version=3.7.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\SharpCalculator\packages\NUnit.3.7.1\lib\net45\nunit.framework.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="nunit.framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\SharpCalculator\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,19 +45,44 @@
   <ItemGroup>
     <Compile Include="OneArgumentCalculatorTests\AbsCalculatorTests.cs" />
     <Compile Include="OneArgumentCalculatorTests\ArcCosineCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculatorTests\ArcCosineGradCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculatorTests\ArcSineCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculatorTests\ArcSineGradCalculatorTests.cs" />
     <Compile Include="OneArgumentCalculatorTests\ArctanCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculatorTests\CosineCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculatorTests\CosineGradTests.cs" />
     <Compile Include="OneArgumentCalculatorTests\CtanCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculatorTests\ExpCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculatorTests\ExponentialFunctionTenCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculatorTests\ExponentialFunctionTwoCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculatorTests\GradToRadConverterTests.cs" />
     <Compile Include="OneArgumentCalculatorTests\InvertCalculatorTests.cs" />
     <Compile Include="OneArgumentCalculatorTests\LgCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculatorTests\LnCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculatorTests\LogTwoCalculatorTests.cs" />
     <Compile Include="OneArgumentCalculatorTests\OneArgumentFactoryTests.cs" />
     <Compile Include="OneArgumentCalculatorTests\ReversiveCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculatorTests\SineCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculatorTests\SineGradCalculatorTests.cs" />
     <Compile Include="OneArgumentCalculatorTests\SquareCalculatorTests.cs" />
     <Compile Include="OneArgumentCalculatorTests\SquareRootCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculatorTests\TanCalculatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TwoArgumentsCalculatorTests\AdditionCalculatorTests.cs" />
     <Compile Include="TwoArgumentsCalculatorTests\ArithmeticCalculatorTests.cs" />
+    <Compile Include="TwoArgumentsCalculatorTests\DivisionCalculatorTests.cs" />
     <Compile Include="TwoArgumentsCalculatorTests\DoubleExponentalCalculatorTests.cs" />
     <Compile Include="TwoArgumentsCalculatorTests\DoubleExponentalReversiveCalculatorTests.cs" />
+    <Compile Include="TwoArgumentsCalculatorTests\GeometricCalculatorTests.cs" />
+    <Compile Include="TwoArgumentsCalculatorTests\IntegerCalculatorTests.cs" />
+    <Compile Include="TwoArgumentsCalculatorTests\LogBasementCalculatorTests.cs" />
+    <Compile Include="TwoArgumentsCalculatorTests\MaxCalculatorTests.cs" />
+    <Compile Include="TwoArgumentsCalculatorTests\MinCalculatorTests.cs" />
+    <Compile Include="TwoArgumentsCalculatorTests\MultiplyCalculatorTests.cs" />
+    <Compile Include="TwoArgumentsCalculatorTests\RadialSystemAngleCalculatorTests.cs" />
+    <Compile Include="TwoArgumentsCalculatorTests\RadialSystemRadiusCalculatorTests.cs" />
+    <Compile Include="TwoArgumentsCalculatorTests\RemainderCalculatorTests.cs" />
+    <Compile Include="TwoArgumentsCalculatorTests\SubstractionCalculatorTests.cs" />
     <Compile Include="TwoArgumentsCalculatorTests\TwoArgumentsFactoryTests.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -70,7 +94,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>

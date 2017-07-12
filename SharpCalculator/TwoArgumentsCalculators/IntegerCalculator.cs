@@ -7,6 +7,8 @@ namespace SharpCalculator.TwoArgumentsCalculators
     {
         public double Calculate(double firstArgument, double secondArgument)
         {
+            if (secondArgument.Equals(0))
+                throw new DivideByZeroException();
             return Math.Floor(firstArgument / secondArgument);
         }
     }

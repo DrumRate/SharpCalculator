@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 using SharpCalculator.TwoArgumentsCalculators;
 
 namespace SharpCalculator.Tests.TwoArgumentsCalculatorTests
@@ -14,6 +15,13 @@ namespace SharpCalculator.Tests.TwoArgumentsCalculatorTests
             var calculator = new DoubleExponentalReversiveCalculator();
             var actualResult = calculator.Calculate(firstArgument, secondArgument);
             Assert.AreEqual(actualResult, expectedResult);
+        }
+
+        [Test]
+        public void ExceptionTest()
+        {
+            var calculator = new DoubleExponentalReversiveCalculator();
+            Assert.Throws<DivideByZeroException>(() => calculator.Calculate(1, 0));
         }
     }
 

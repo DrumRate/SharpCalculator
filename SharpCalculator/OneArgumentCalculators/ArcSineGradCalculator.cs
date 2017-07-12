@@ -1,13 +1,17 @@
-﻿namespace SharpCalculator.OneArgumentCalculators
+﻿using System;
+
+namespace SharpCalculator.OneArgumentCalculators
 {
     public class ArcSineGradCalculator : IOneAgrumentsCalculator
 
     {
         public double Calculate(double argument)
         {
-            var converter = new GradToRadConverter();
+            if ((argument < -1) & (argument > 1))
+                throw new Exception("Недопустимые входные данные");
+            var converter = new RadToGradConverter();
             var calculator = new ArcSineCalculator();
-            return calculator.Calculate(converter.Calculate(argument));
+            return converter.Calculate(calculator.Calculate(argument));
         }
     }
 }

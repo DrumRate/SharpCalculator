@@ -1,6 +1,6 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 using SharpCalculator.OneArgumentCalculators;
-using SharpCalculator.TwoArgumentsCalculators;
 
 namespace SharpCalculator.Tests.OneArgumentCalculatorTests
 {
@@ -15,6 +15,13 @@ namespace SharpCalculator.Tests.OneArgumentCalculatorTests
             var calculator = new SquareRootCalculator();
             var actualResult = calculator.Calculate(firstArgument);
             Assert.AreEqual(expectedResult, actualResult, 0.001);
+        }
+
+        [Test]
+        public void ExceptionTest()
+        {
+            var calculator = new SquareRootCalculator();
+            Assert.Throws<Exception>(() => calculator.Calculate(-23));
         }
     }
 

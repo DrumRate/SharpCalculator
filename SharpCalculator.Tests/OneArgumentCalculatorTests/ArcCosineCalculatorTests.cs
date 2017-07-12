@@ -1,7 +1,6 @@
 ﻿using System;
 using NUnit.Framework;
 using SharpCalculator.OneArgumentCalculators;
-using SharpCalculator.TwoArgumentsCalculators;
 
 namespace SharpCalculator.Tests.OneArgumentCalculatorTests
 {
@@ -16,6 +15,12 @@ namespace SharpCalculator.Tests.OneArgumentCalculatorTests
             var calculator = new ArcCosineCalculator();
             var actualResult = calculator.Calculate(firstArgument);
             Assert.AreEqual(expectedResult, actualResult, 0.001);
+        }
+        [Test]
+        public void ExceptionTest()
+        {
+            var calculator = new ArcCosineCalculator();
+            Assert.Throws<Exception>(()=>calculator.Calculate(2));
         }
     }
 
