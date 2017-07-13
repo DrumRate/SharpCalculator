@@ -51,7 +51,7 @@ namespace SharpCalculator
             catch (Exception exception)
             {
                 outputField.Text = "Ошибка";
-                MessageBox.Show("Недопустимые аргументы", "Возникло исключение", MessageBoxButtons.OK);
+                MessageBox.Show(exception.Message, "Возникло исключение", MessageBoxButtons.OK);
             }
         }
     }
